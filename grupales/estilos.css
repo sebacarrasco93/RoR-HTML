@@ -19,6 +19,10 @@ h1 {
     justify-content: center;
 }
 
+.separador::before {
+    content: '|';
+}
+
 a {
     color: #fff;
     margin-left: 25px;
