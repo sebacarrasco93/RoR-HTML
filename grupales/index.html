@@ -9,37 +9,74 @@
 <body>
     <h1>Te lo vendo</h1>
     <header>
-        <div class="menu">
+        <nav class="menu">
             <a href="#">Inicio</a><div class="separador"></div>
             <a href="#">Productos</a> <div class="separador"></div>
-            <a href="#">Contacto</a>
-        </div>
+            <a href="#contacto">Contacto</a>
+        </nav>
     </header>
 
     <main>
-        <div class="slider">
+        <section class="slider">
             <div class="slide-1">
                 <a href="#" class="texto" title="Llámanos">Llámanos</a>
                 <img src="foto_1.jpg" alt="Foto uno" width="100%">
             </div>
-        </div>
+        </section>
 
-        <div class="texto-bajada">
+        <section class="texto-bajada">
             <p>Somos una empresa joven dedicada a las ventas de productos de calidad para ti y tu familia</p>
             <p>Nuestra misión es acercarte los mejores y más novedosos artículos que existen a nivel mundial, tanto para decoración, como de uso práctico para tu hogar, negocio, trabajo o estilo de vida</p>
             <p>Revisa nuesto sitio y sorpréndete</p>
-        </div>
+        </section>
+
+        <section>
+            <div class="imagenes">
+                <h2>Galería de imágenes</h2>
+                <img src="img/productos/1.jpg" alt="Imagen producto 1" heigth="300">
+                <img src="img/productos/2.jpg" alt="Imagen producto 2" heigth="300">
+                <img src="img/productos/3.png" alt="Imagen producto 3" width="300">
+                <img src="img/productos/img1.jpg" alt="Imagen producto 4" heigth="300">
+                <img src="img/productos/img2.jpg" alt="Imagen producto 5" heigth="300">
+                <img src="img/productos/img3.jpg" alt="Imagen producto 6" height="300">
+            </div>
+        </section>
+
+        <aside>
+            <div class="formulario" id="contacto">
+                <form action="">
+                    <h2>Contacto</h2>
+                    <div class="grupo">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre">
+                    </div>
+
+                    <div class="grupo">
+                        <label for="correo">Correo</label>
+                        <input type="text" id="correo" name="correo" placeholder="tucorreo@dominio.cl">
+                    </div>
+
+                    <div class="grupo">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" placeholder="Tu mensaje" rows="4"></textarea>
+                    </div>
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </aside>
     </main>
 
     <footer>
         <div class="links">
             <a href="#">Inicio</a>
             <a href="#">Productos</a>
-            <a href="#">Contacto</a>
+            <a href="#contacto">Contacto</a>
         </div>
 
         <div class="nombres">
-            ® 2022 Diseña y Desarrolla Sebastián Carrasco, Mari Díaz-Valdés
+            <div>® 2022 Todos los Derechos Reservados</div>
+            <div>Sebastián Carrasco, Mari Díaz-Valdés, Salvador Tapia</div>
         </div>
     </footer>
 </body>
