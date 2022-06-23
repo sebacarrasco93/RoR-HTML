@@ -2,6 +2,7 @@
 
 html {
     font-family: 'Nunito', sans-serif;
+    margin: auto;
 }
 
 h1 {
@@ -137,8 +138,34 @@ label {
     margin-right: 10px;
 }
 
-/* Cambiar el estio del menú en vista móvil */
-@media only screen and (max-width: 600px) {
+
+/**
+ * 
+ * Estilos "nuevos" de ejercicios
+ * 
+ **/
+
+.menu {
+    background: blue;
+    color: lightblue;
+}
+
+footer {
+    background: #000;
+}
+
+.texto-bajada {
+    text-align: center;
+}
+
+/**
+ * 
+ * Medidas responsive
+ * 
+ *  */
+
+/* Móvil */
+@media only screen and (max-width: 640px) {
     .menu {
         flex-direction: column;
         align-items: center;
@@ -146,5 +173,21 @@ label {
 
     .separador {
         display: none;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+/* Tablet */
+@media only screen and (max-width: 1007px) {
+    
+}
+
+/* Escritorio */
+@media only screen and (min-width: 1008px) {
+    html {
+        width: 80%;
     }
 }
