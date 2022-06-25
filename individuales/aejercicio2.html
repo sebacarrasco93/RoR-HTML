@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sence</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+        html {
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            margin: auto;
+            width: 80%;
+            padding: 10px;
+            background: #F4EDED;
+            color: #464D77;
+        }
+
+        h1 {
+            background: #F9DB6D;
+            display: inline-block;
+            padding: 20px;
+            text-decoration: underline;
+        }
+
+        h1::before {
+            content: 'Ejercicio 2';
+        }
+
+        nav {
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            background: #F9DB6D;
+            font-weight: 600;
+        }
+
+        nav a {
+            margin: 20px;
+            padding: 10px;
+            color: #000;
+            text-decoration: none;
+            border: 2px dashed #F9DB6D;
+        }
+
+        nav a:hover {
+            background: rgba(250,250,0,.8);
+        }
+
+        section {
+            margin: 0 auto 50px auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 2px 5px 30px rgba(0,0,0,.1);
+            transition: all 300ms;
+        }
+
+        section:hover {
+            box-shadow: 2px 10px 40px rgba(0,0,0,.5);
+        }
+
+        .contenido {
+            padding: 50px;
+        }
+
+        footer {
+            background: linear-gradient(45deg, #464D77, #65687a);
+            color: #fff;
+        }
+
+        footer {
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        #quienes-somos .interior {
+            display: flex;
+        }
+
+        #quienes-somos .texto {
+            margin: 0 20px;
+            text-align: left;
+        }
+
+        img {
+            height: 100%;
+            width: 50%;
+        }
+
+        .servicio {
+            margin-top: 100px;
+        }
+
+        @media only screen and (max-width: 1250px) {
+            img {
+                width: 100%;
+            }
+
+            .interior {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        <span></span>
+    </h1>
+
+    <nav>
+        <a href="#quienes-somos">Quiénes somos</a>
+        <a href="#productos">Productos</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <div class="contenido">
+        <section id="quienes-somos">
+            <h2>Quiénes somos</h2>
+            <div class="interior">
+                <img src="https://1.cms.s81c.com/sites/default/files/2021-07-29/card-1.jpg">
+                <div class="texto">
+                    <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="productos">
+            <h2>Productos</h2>
+            <div class="texto">
+                <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.</p>
+
+                <p>No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.</p>
+
+                <p>Al contrario del pensamiento popular, el texto de Lorem Ipsum no es simplemente texto aleatorio. Tiene sus raices en una pieza cl´sica de la literatura del Latin, que data del año 45 antes de Cristo, haciendo que este adquiera mas de 2000 años de antiguedad.</p>
+            </div>
+        </section>
+
+        <section id="servicios">
+            <h2>Servicios</h2>
+            <div class="servicio">
+                <h3>Cerveza a tu casa</h3>
+                <div class="texto">
+                    <img src="https://www.thegourmetjournal.com/wp-content/uploads/2020/08/Cerveza.jpg" alt="Cerveza a tu casa">
+                    <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.</p>
+                </div>
+            </div>
+
+            <div class="servicio">
+                <h3>Comida saludable a tu casa</h3>
+                <div class="texto">
+                    <img src="https://s03.s3c.es/imag/_v0/770x420/4/1/0/700x420_delivery-comida-domicilio-dreams.jpg" alt="Comida saludable a tu casa">
+                    <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        Todos los derechos reservados
+    </footer>
+</body>
+</html>
